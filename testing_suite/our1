@@ -1,0 +1,61 @@
+It is now cycle 17929
+It is now cycle 17930
+P   10 | sti r15 0 -182
+       | -> store to 0 + -182 = -182 (with pc and mod 79)
+P    9 | sti r15 0 -194
+       | -> store to 0 + -194 = -194 (with pc and mod 67)
+P    7 | sti r15 0 -190
+       | -> store to 0 + -190 = -190 (with pc and mod 71)
+P    2 | sti r15 0 -186
+       | -> store to 0 + -186 = -186 (with pc and mod 75)
+It is now cycle 17931
+It is now cycle 17932
+It is now cycle 17933
+P   14 | live -1
+P   13 | live -1
+P   11 | live -1
+P    4 | live -1
+It is now cycle 17934
+It is now cycle 17935
+P   20 | sti r15 0 -182
+       | -> store to 0 + -182 = -182 (with pc and mod 1137)
+P    6 | sti r15 0 -182
+       | -> store to 0 + -182 = -182 (with pc and mod 1137)
+P    5 | sti r15 0 -194
+       | -> store to 0 + -194 = -194 (with pc and mod 1125)
+P    3 | sti r15 0 -190
+       | -> store to 0 + -190 = -190 (with pc and mod 1129)
+P    1 | sti r15 0 -186
+       | -> store to 0 + -186 = -186 (with pc and mod 1133)
+It is now cycle 17936
+It is now cycle 17937
+It is now cycle 17938
+It is now cycle 17939
+P   18 | zjmp -200 OK
+It is now cycle 17940
+It is now cycle 17941
+It is now cycle 17942
+It is now cycle 17943
+It is now cycle 17944
+It is now cycle 17945
+It is now cycle 17946
+It is now cycle 17947
+It is now cycle 17948
+It is now cycle 17949
+P   18 | live -1
+It is now cycle 17950
+P   10 | zjmp -200 OK
+P    9 | zjmp -200 OK
+P    7 | zjmp -200 OK
+P    2 | zjmp -200 OK
+It is now cycle 17951
+It is now cycle 17952
+It is now cycle 17953
+It is now cycle 17954
+It is now cycle 17955
+P   20 | zjmp -200 OK
+P    6 | zjmp -200 OK
+P    5 | zjmp -200 OK
+P    3 | zjmp -200 OK
+P    1 | zjmp -200 OK
+It is now cycle 17956
