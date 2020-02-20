@@ -1,9 +1,9 @@
 Gagnant.cor
 Kittystrophic.cor
-Lisbeth.cor
 TheHarvester.cor
 add.cor
 add.s
+asm
 batman.cor
 jumper.cor
 ld.cor
@@ -22,7 +22,6 @@ sti_negative.cor
 sti_negative.s
 sub.cor
 sub.s
-tester.cor
 tester.s
 tester2.cor
 tester2.s
@@ -37,5 +36,7 @@ tester6.s
 tester7.cor
 tester7.s
 tester8.cor
+tester9.cor
+tester9.s
 toto.cor
 zork.cor
