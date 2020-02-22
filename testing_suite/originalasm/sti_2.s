@@ -3,9 +3,7 @@
 
 
 ld %100, r3
-sti r3, %7, %57
-sti r3, 7, %57
-sti r3, r3, %57
+sti r3, 5, %57
 
 #will do nothing if r is <= 0 or > REG_NUM
 

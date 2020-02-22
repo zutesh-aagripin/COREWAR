@@ -33,28 +33,28 @@ initial_check()
 check_on_vm()
 {
 	PROBLEM=0;
-	(./originals/corewar -v 31$ARG $FILE/$CHAMPION > our; ) & pid=$!
-	( sleep 20 && pkill -HUP $pid ) 2>null & watcher=$!
-	wait $pid 2>null;
-	if ps -p $watcher 2>null;
-	then
-		pkill -HUP -P $watcher
-		wait $watcher
-	else
-	    echo "your_code timeout"
-		echo "timeout" >> our
-	fi;
-	(./originals/corewar -v 31$ARG originalasm/$CHAMPION > original; ) & pid=$!
-	( sleep 20 && pkill -HUP $pid ) 2>null & watcher=$!
-	wait $pid 2>null; 
-	if ps -p $watcher 2>null;
-	then
-		pkill -HUP -P $watcher
-		wait $watcher
-	else
-	    echo "original_code timeout"
-		echo "timeout" >> original
-	fi;
+	(./originals/corewar -v 31$ARG $FILE/$CHAMPION > our; ) #& pid=$!
+#	( sleep 20 && pkill -HUP $pid ) 2>null & watcher=$!
+#	wait $pid 2>null;
+#	if ps -p $watcher 2>null;
+#	then
+#		pkill -HUP -P $watcher
+#		wait $watcher
+#	else
+#	    echo "your_code timeout"
+#		echo "timeout" >> our
+#	fi;
+	(./originals/corewar -v 31$ARG originalasm/$CHAMPION > original;)  # & pid=$!
+#	( sleep 20 && pkill -HUP $pid ) 2>null & watcher=$!
+#	wait $pid 2>null; 
+#	if ps -p $watcher 2>null;
+#	then
+#		pkill -HUP -P $watcher
+#		wait $watcher
+#	else
+#	    echo "original_code timeout"
+#		echo "timeout" >> original
+#	fi;
 	diff original our > file;
 	diff original our >> asmtrace;
 	WORDCOUNT=$(cat file | wc -l);
